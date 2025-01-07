@@ -13,7 +13,7 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">Dashboard</Link>
+                <Link className="nav-link active" aria-current="page" to="/dashbaord">Dashboard</Link>
               </li>
                <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/">PostFeed</Link>
@@ -39,8 +39,8 @@ export default function Navbar() {
             <form className="d-flex" role="search">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
               <button className="btn btn-outline-success" type="submit">Search</button>
-             <Link href="#" className="btn btn-outline-success mx-1" tabindex="-1" role="button" aria-disabled="true">Login</Link>
-             <Link href="#" className="btn btn-outline-success mx-1" tabindex="-1" role="button" aria-disabled="true">Signup</Link>
+             <Link to = "/Signup" className="btn btn-outline-success mx-1" tabindex="-1" role="button" aria-disabled="true">Login</Link>
+             <Link href="/Signup" className="btn btn-outline-success mx-1" tabindex="-1" role="button" aria-disabled="true">Signup</Link>
             </form>
           </div>
         </div>

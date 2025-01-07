@@ -4,7 +4,12 @@ const User = require('../models/user'); // Use capitalized User for model (commo
 
 // Register new User
 const registerUser = async (req, res) => {
-  const { name, email, password } = req.body; 
+  const { fullname, email, password } = req.body; 
+
+  // Check if all fields are provided
+  if (!fullname || !email || !password) {
+    return res.status(400).json({ message: "Please provide name, email, and password." });
+  }
 
   try {
     // Check if the user already exists
@@ -17,16 +22,19 @@ const registerUser = async (req, res) => {
     const hashedPassword = await bcrypt.hash(password, 10);
 
     // Create a new user instance
-    const newUser = new User({ name, email, password: hashedPassword });
+    const newUser = new User({ fullname, email, password: hashedPassword });
 
     // Save the new user into the database
     await newUser.save();
     res.status(201).json({ message: "User registered successfully" });
 
   } catch (error) {
+    console.error("Error during user registration:", error);
     res.status(500).json({ message: "Internal Server Error" });
   }
 };
+
+module.exports = { registerUser };
 
 // Login User
 const loginUser = async (req, res) => {

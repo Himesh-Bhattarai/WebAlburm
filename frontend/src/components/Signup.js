@@ -13,7 +13,7 @@ export default function Signup() {
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value, // Update the respective field based on input name
+      [e.target.name]: e.target.value, 
     });
   };
 
