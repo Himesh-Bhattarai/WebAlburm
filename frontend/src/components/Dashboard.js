@@ -1,6 +1,4 @@
-import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Typed from "typed.js";
 import DocNavbar from "./DocNavbar";
 
 export default function Dashboard() {
@@ -14,21 +12,6 @@ export default function Dashboard() {
     height: "90vh",
     width :" 60%"
   };
-
-  useEffect(() => {
-    const typed = new Typed("#Elements", {
-      strings: ["PHOTOS", "VIDEOS", " COLLECTION"],
-      typeSpeed: 150,
-      backSpeed: 50,
-      backDelay: 1000,
-      loop: true,
-    });
-    return () => {
-      typed.destroy();
-    };
-  }, []);
-
-
 
   return (
     <>

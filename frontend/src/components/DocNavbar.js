@@ -26,7 +26,7 @@ export default function DocNavbar() {
                 <Link
                   className="nav-link active colortext"
                   aria-current="page"
-                  href="#"
+                  to="/Profile"
                 >
                   Home
                 </Link>
