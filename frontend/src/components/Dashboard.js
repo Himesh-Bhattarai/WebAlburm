@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Typed from "typed.js";
 import DocNavbar from "./DocNavbar";
 
@@ -10,13 +11,13 @@ export default function Dashboard() {
   };
 
   const middleDiv = {
-    height : "90vh",
-    width : "90%"
+    height: "90vh",
+    width :" 60%"
   };
 
   useEffect(() => {
     const typed = new Typed("#Elements", {
-      strings: ["PHOTOS", "VIDEOS", " COLLECTION",],
+      strings: ["PHOTOS", "VIDEOS", " COLLECTION"],
       typeSpeed: 150,
       backSpeed: 50,
       backDelay: 1000,
@@ -27,42 +28,26 @@ export default function Dashboard() {
     };
   }, []);
 
-  const element = {
-    fontSize: "44px",
-    color: "#87CEEB",
-  };
+
 
   return (
     <>
-    <DocNavbar />
+      <DocNavbar />
       <div style={dashboardCss} className="HomeContainer">
         <div style={middleDiv} className="textAndImage">
-          <div className="marqueeText">
             <h1 className="section-div-h3">
-             WELCOME TO WEB ALBURM...!
-            </h1>
-            <h1 className="section-div-floattext">
-              Here You can Save <span style={element} id="Elements"></span>
-            </h1>
-
-            <div className="socialicons">
-              <a href="/" aria-label="Facebook">
-                <img
-                  className="iconPngs"
-                  src="icons8-facebook-24.png"
-                  alt="Facebook Icon"
-                />
-              </a>
-              <a href="/" aria-label="Instagram">
-                <img
-                  className="iconPngs"
-                  src="icons8-insta-24.png"
-                  alt="Instagram Icon"
-                />
-              </a>
-            </div>
+              "Capture, Organize, and Relive Your Memories in One Place"</h1>
+          <h5 className="section-div-h5">Join the most intuitive platform to store, manage, and share your digital memories effortlessly.</h5>
+          <div className="social-links text-center">
+            <Link to="#" className="twitter" target="_blank"><i className="bi bi-twitter-x" ></i></Link>
+            <Link to="https://www.linkedin.com/in/himeshchanchal-bhattarai-9687612bb/" target="_blank" className="LinkIN"><i class="bi bi-linkedin"></i></Link>
+            <Link to="https://www.instagram.com/himesh.hcb/" target="_blank" className="instagram"><i className="bi bi-instagram"></i></Link>
+            <Link to="https://wa.me/9806352021" className="whatsapp" target="_blank"><i className="bi bi-whatsapp"></i></Link>
+            <Link to="https://github.com/Himesh-Bhattarai" className="github" target="_blank"><i className="bi bi-github"></i></Link>
           </div>
-        </div>
+            </div>
+           
+          
       </div>
     </>
   );

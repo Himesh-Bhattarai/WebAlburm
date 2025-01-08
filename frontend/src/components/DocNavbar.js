@@ -7,7 +7,7 @@ export default function DocNavbar() {
       <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
           <Link className="navbar-brand colortext" href="#">
-            Navbar
+           Web Alburm
           </Link>
           <button
             className="navbar-toggler"
@@ -76,17 +76,9 @@ export default function DocNavbar() {
                 </Link>
               </li>
             </ul>
-            <form className="d-flex colorsearch" role="search">
-              <input
-                className="form-control me-2 colorsearch"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success btncen" type="submit">
-                Search
-              </button>
-            </form>
+           
+            <Link to="/Signup" className="btn btn-outline-success mx-1" tabindex="-1" role="button" aria-disabled="true">Login</Link>
+            <Link href="/Signup" className="btn btn-outline-success mx-1" tabindex="-1" role="button" aria-disabled="true">Signup</Link>
           </div>
         </div>
       </nav>
