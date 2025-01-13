@@ -121,3 +121,28 @@ margin: 5px;
   width: 100%;
   height: 50px;
 }
+
+/* profile-section-css-after-login? */
+.main-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Background-container{
+  margin-top: 50px;
+  width: 90%;
+  height: 50vh;
+  background-color: red;
+}
+
+.profile-section{
+  display: flex;
+  flex-direction: row;
+  z-index: 5;
+  width: 80%;
+  height: 100px;
+  background-color: aqua;
+  color: black;
+  margin-top: -50px;
+}

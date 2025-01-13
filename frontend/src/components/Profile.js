@@ -1,63 +1,39 @@
 import React from 'react'
 import Navbar from './Navbar'
-import { Link } from 'react-router-dom'
+
 
 export default function Profile() {
   return (
     <>
+<div className='profile-navbar-component'>
       <Navbar />
-      <div className='Profile-container'>
-        <div className='rightmenu'>
-          <div className='ProfilePicture'>
-            Profile
-          </div>
+</div>
+    <div className='main-container'>
+      <div className='Background-container'>
+          <img src="your-image-url" alt="Background" />
 
-          <div className='UserName'>
-            Himeshchanchal Bhattarai
-          </div>
-          <hr/>
-          <div className='NavMenu'>
-          <div className='Navitem'>
-            tima
-          </div>
-            <div className='Navitem'>
-            falam
-          </div>
-            <div className='Navitem'>
-              tima
-            </div>
-            <div className='Navitem'>
-              falam
-            </div>
-          </div>
-
-        </div>
-        <div className='contantSection'>
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <Link class="nav-link active" aria-current="page" href="#">Home feed</Link>
-            </li>
-            <li class="nav-item">
-              <Link class="nav-link " href="#">Images</Link>
-            </li>
-           
-            <li class="nav-item">
-              <Link class="nav-link" href="#">Videos</Link>
-            </li>
-            <li class="nav-item">
-              <Link class="nav-link" href="#">Folder Collection</Link>
-            </li>
-            <li class="nav-item">
-              <Link class="nav-link" href="#">Cottage</Link>
-            </li>
-            <li class="nav-item">
-              <Link class="nav-link" href="#">Private</Link>
-            </li>
-       
-          </ul>
-
-        </div>
       </div>
+      <div className='profile-section'>
+        <div className='user-profile-div'>
+        <img src='./public/FrontBackground/images.jpg' alt='user-profile'/>
+        </div>
+        <div className='user-content'>
+          <span className='user-name'> </span>
+          <div className="user-button">
+            <button className='btn btn-success my-1 mx-1'>Add Images</button>
+              <button className='btn btn-success my-1 mx-1'>Add Videos</button>
+              <button className='btn btn-success my-1 mx-1'>Update profile</button>
+              <button className='btn btn-success my-1 mx-1'>Update Background</button>
+
+          </div>
+        </div>
+
+      </div>
+      <div className='user-images&contant'>
+
+
+      </div>
+    </div>
     </>
   )
 }
