@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import { Link } from 'react-router-dom'
 
 
 export default function Profile() {
@@ -8,32 +9,36 @@ export default function Profile() {
 <div className='profile-navbar-component'>
       <Navbar />
 </div>
-    <div className='main-container'>
-      <div className='Background-container'>
-          <img src="your-image-url" alt="Background" />
-
-      </div>
-      <div className='profile-section'>
-        <div className='user-profile-div'>
-        <img src='./public/FrontBackground/images.jpg' alt='user-profile'/>
-        </div>
-        <div className='user-content'>
-          <span className='user-name'> </span>
-          <div className="user-button">
-            <button className='btn btn-success my-1 mx-1'>Add Images</button>
-              <button className='btn btn-success my-1 mx-1'>Add Videos</button>
-              <button className='btn btn-success my-1 mx-1'>Update profile</button>
-              <button className='btn btn-success my-1 mx-1'>Update Background</button>
-
-          </div>
+      <div class="container">
+        {/* <!-- Cover Photo Section --> */}
+        <div class="cover-photo">
+          <button class="add-cover-photo">Add cover photo</button>
         </div>
 
-      </div>
-      <div className='user-images&contant'>
+        {/* <!-- Profile Section --> */}
+        <div class="profile-section">
+          <img src="" alt="Profile-Picture" class="profile-pic"/>
+            <div class="profile-info">
+              <h1>Hike Man</h1>
+            </div>
+            <div class="profile-buttons">
+              <button>Add to story</button>
+              <button>Edit profile</button>
+            </div>
+        </div>
+        <hr />
 
 
+        {/* <!-- Navigation Bar --> */}
+        <div class="nav-bar">
+          <Link href="#">Photos</Link>
+          <Link href="#">Videos</Link>
+          <Link href="#">Private</Link>
+          <Link href="#">Collection</Link>
+          <Link href="#">Cottages</Link>
+        </div>
+        
       </div>
-    </div>
     </>
   )
 }

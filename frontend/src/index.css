@@ -1,148 +1,94 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #18191A;
+            color: #E4E6EB;
+        }
 
-.HomeContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-.textAndImage {
-  display: flex;
-flex-direction: column;
-text-align: center;
-padding: 10px;
-margin: 5px;
-}
+        .cover-photo {
+            background-color: #999da1;
+            height: 300px;
+            position: relative;
+        }
 
+        .add-cover-photo {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #3A3B3C;
+            border: none;
+            color: #E4E6EB;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-.navbar {
-  background-color: #060841;
-  color: #d1d0dc !important;
-}
+        .profile-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #242526;
+        }
 
-.nav-item {
-  color: #d1d0dc !important;
-}
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid #18191A;
+            background-color: #3A3B3C;
+        }
 
-.colortext {
-  color: #d1d0dc !important;
-}
+        .profile-info {
+            flex: 1;
+            margin-left: 20px;
+        }
 
-.colorsearch{
-  color: #272e49 !important;
-  height: 30px !important;
-}
+        .profile-info h1 {
+            margin: 0;
+            font-size: 24px;
+        }
 
-.section-div-h3, .section-div-floattext{
-    color: white; /* Base text color */
-   
-}
+        .profile-buttons {
+            display: flex;
+            gap: 10px;
+        }
 
+        .profile-buttons button {
+            background-color: #3A3B3C;
+            border: none;
+            color: #E4E6EB;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-.section-div-h3{
-  font-size: 60px;
-}
-.section-div-h5{
-  margin-top: 10px;
-  padding: 5px;
-   color: white; 
-}
+        .nav-bar {
+            background-color: #242526;
+            display: flex;
+            gap: 20px;
+            padding: 10px 20px;
+            border-bottom: 1px solid #3A3B3C;
+        }
 
-.bi{
-  height: 55px !important;
-  width: 25px;
-  background-color:#060841;
-  font-size : 22px;
-  color:#87CEEB;
-  padding: 3px;
-  margin: 6px;
-}
+        .nav-bar a {
+            text-decoration: none;
+            color: #E4E6EB;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
 
-/* /Profile section css code */
+        .nav-bar a:hover {
+            background-color: #3A3B3C;
+        }
 
-.Profile-container{
-  height: auto;
-  width: 100%;
-  display: flex;
-  border: 2px solid blue;
-  justify-content:left;
-}
+       
 
-.rightmenu{
-  border: 2px solid yellow;
-  height: 90vh;
-  width: 15%;
-  
-}
-
-.contantSection{
-  margin-left: 50px;
-   border: 2px solid rgb(207, 23, 207);
-  height: auto;
-  width: 80%;
-}
-
-.ProfilePicture{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-  height: 160px;
-  width: 160px;
-  border: 2px solid red;
-}
-
-.UserName{
-  text-align: center;
-  margin-top: 2px;
-  width: 100%;
-  height: 50px;
-  border: 2px solid purple;
-}
-
-.Navitem{
-  margin-top: 3px;
-  text-align: center;
-  border: 2px solid black;
-  width: 100%;
-  height: 50px;
-}
-
-/* profile-section-css-after-login? */
-.main-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.Background-container{
-  margin-top: 50px;
-  width: 90%;
-  height: 50vh;
-  background-color: red;
-}
-
-.profile-section{
-  display: flex;
-  flex-direction: row;
-  z-index: 5;
-  width: 80%;
-  height: 100px;
-  background-color: aqua;
-  color: black;
-  margin-top: -50px;
-}
+       
