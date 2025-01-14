@@ -5,6 +5,7 @@ import Profile from './components/Profile';
 import Photos from './components/Photos';
 import Videos from './components/Videos'
 import Signup from './components/Signup';
+import Login from './components/Login';
 
 export default function App() {
   return (
@@ -15,7 +16,7 @@ export default function App() {
         <Route path='/Photos' element={<Photos />} />
         <Route path='/Videos' element={<Videos />} />
         <Route path='/Signup' element={<Signup />} />
-
+        <Route path='/Login' element={<Login />} />
 
       </Routes>
     </Router>
