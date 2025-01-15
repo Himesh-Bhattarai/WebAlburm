@@ -1,90 +1,73 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
 export default function Dashboard() {
-
-
   return (
-    <>
-    <div className='dashboard-body'>
-    
+  <>
+      
+
+      <div className="dashboard-container">
+        {/* Navbar */}
+        <div className="dashboard-navbar">
+          <h1>Web Alburm</h1>
+          <div>
+            <Link to="/login">Login</Link>
+            <Link to="/signup">Sign Up</Link>
+          </div>
+        </div>
+
         {/* Hero Section */}
-        <div className="section hero-section">
-          <h1>Welcome to Our Website</h1>
-          <p>Login or Sign Up to explore more</p>
-          <button><Link to="/Login">Login</Link></button>
-          <button><Link to="/Signup">Signup</Link></button>
+        <div className="hero-section">
+          <h2>Welcome to Your Cloud Solution</h2>
+          <p>Join us to secure, organize, and showcase your precious memories effortlessly.</p>
+          <button>Learn More</button>
         </div>
 
-        {/* Features Section */}
-        <div className="section features-section">
-          <h2>What We Offer</h2>
+        {/* Section 1: Save Your Media */}
+        <div className="section">
+          <h2>Secure Your Memories</h2>
+          <p>We provide top-notch cloud storage for your images and videos, ensuring they are safe and always accessible.</p>
+          <div className="video-placeholder">Video: How We Secure Your Data</div>
+        </div>
+
+        {/* Section 2: What We Offer */}
+        <div className="section">
+          <h2>Our Unique Features</h2>
+          <p>From cloud storage to creative collages, we offer everything to manage your memories seamlessly.</p>
           <ul>
-            <li>Save your images and videos on our secure cloud platform to ensure they are never lost.</li>
-            <li>Organize your photos into folders for easy management.</li>
-            <li>Create beautiful collages to enjoy your photos in a creative way.</li>
-            <li>Access your photos and videos even if you forget your password using our secure recovery process.</li>
+            <li>Easy-to-use folder organization</li>
+            <li>Advanced security protocols</li>
+            <li>Creative photo collages</li>
+            <li>Password recovery options</li>
           </ul>
         </div>
 
-        {/* Offer Section */}
-        <div className="section offer-section">
-          <h2>We Offer a Variety of Collages</h2>
-          <div className="cottage-card">
-            <img src="https://via.placeholder.com/300x200" alt="Cottage 1" />
-            <h3>Formal Collage</h3>
-            <p>Enjoy a premium experience with Formal amenities.</p>
-          </div>
-          <div className="cottage-card">
-            <img src="https://via.placeholder.com/300x200" alt="Cottage 2" />
-            <h3>Modern Collage</h3>
-            <p>Modern way to see your memories.</p>
-          </div>
+        {/* Section 3: Folder Management */}
+        <div className="section">
+          <h2>Organize Folder-Wise</h2>
+          <p>Keep your files neat and accessible with our intuitive folder system.</p>
+          <div className="video-placeholder">Video: Folder Management Demo</div>
         </div>
 
-        {/* Security Section */}
-        <div className="section security-section">
-          <h2>Secure Your Account</h2>
-          <ul>
-            <li>
-              In case of password recovery, provide the following:
-              <ul>
-                <li>Full Name</li>
-                <li>Email</li>
-                <li>Username</li>
-                <li>Document Number</li>
-                <li>Date of Birth</li>
-              </ul>
-            </li>
-            <li>We also verify your identity by asking questions and providing five images from your account.</li>
-            <li>You need to identify one image that you did not save, ensuring only the real account owner gains access.</li>
-          </ul>
+        {/* Section 4: Password Recovery */}
+        <div className="section">
+          <h2>Forgot Password?</h2>
+          <p>Recover your account securely with our innovative recovery process.</p>
+          <div className="video-placeholder">Video: Password Recovery Steps</div>
+        </div>
+
+        {/* Section 5: Collages */}
+        <div className="section">
+          <h2>Create Stunning Collages</h2>
+          <p>Design and showcase your memories with our exclusive collage templates.</p>
+          <div className="video-placeholder">Example Collages</div>
         </div>
 
         {/* Footer */}
-        <footer>
-          <div className="footer-container">
-            <div className="footer-about">
-              <h4>About Us</h4>
-              <p>
-                Our platform ensures your memories are safe and organized.
-                Save your photos and videos, create collages, and manage everything with ease.
-              </p>
-            </div>
-            <div className="footer-contact">
-              <h4>Contact Us</h4>
-              <p>Email: support@yourwebsite.com</p>
-              <p>Phone: +123 456 7890</p>
-              <p>Address: 123 Cloud Street, Memory City</p>
-            </div>
-          </div>
-          <div className="footer-bottom">
-            <p>&copy; 2025 Your Website. All Rights Reserved.</p>
-          </div>
-      </footer>
+        <div className="footer">
+          <p>&copy; 2025 Our Platform. All rights reserved.</p>
+        </div>
       </div>
-
     </>
   );
 }
