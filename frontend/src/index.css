@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: #ffffff;
@@ -131,7 +131,7 @@ body {
 }
 
 /* dashoarde end? */
-
+/* 
 .container {
   width: 100%;
   max-width: 1200px;
@@ -334,7 +334,7 @@ body {
 }
 
 /* signuo?"" */
-
+/* 
 .signup-body {
   background-color: #242526;
   color: white;
@@ -376,4 +376,244 @@ body {
 .btn-custom:hover {
   background: linear-gradient(120deg, #3498db, #8e44ad);
   color: white;
-}
+} */ 
+
+.dashboard {
+          display: grid;
+          grid-template-columns: 240px 1fr 300px;
+          min-height: 100vh;
+          background: #1a1a1a;
+          color: #ffffff;
+        }
+
+        .sidebar {
+          padding: 2rem;
+          border-right: 1px solid #2a2a2a;
+        }
+
+        .logo {
+          margin-bottom: 2rem;
+        }
+
+        .nav-menu {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .nav-item {
+          padding: 0.75rem 1rem;
+          color: #888;
+          text-decoration: none;
+          border-radius: 8px;
+          transition: all 0.2s;
+        }
+
+        .nav-item.active {
+          background: #2a2a2a;
+          color: #fff;
+        }
+
+        .main-content {
+          padding: 2rem;
+        }
+
+        .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 2rem;
+        }
+
+        .top-nav {
+          display: flex;
+          gap: 2rem;
+        }
+
+        .nav-link {
+          color: #888;
+          text-decoration: none;
+          transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+          color: #fff;
+        }
+
+        .user-section {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+
+        .avatar {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+        }
+
+        .service-section {
+          margin-bottom: 3rem;
+        }
+
+        .search-bar {
+          display: flex;
+          align-items: center;
+          background: #2a2a2a;
+          padding: 0.5rem 1rem;
+          border-radius: 8px;
+          margin: 1rem 0;
+        }
+
+        .search-bar input {
+          background: none;
+          border: none;
+          color: #fff;
+          margin-left: 1rem;
+          flex: 1;
+        }
+
+        .service-cards {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 1rem;
+          margin-top: 1rem;
+        }
+
+        .service-card {
+          padding: 1.5rem;
+          border-radius: 12px;
+          cursor: pointer;
+        }
+
+        .service-card.green {
+          background: #a3ff9e;
+          color: #1a1a1a;
+        }
+
+        .service-card.mint {
+          background: #9efff4;
+          color: #1a1a1a;
+        }
+
+        .service-card.gray {
+          background: #2a2a2a;
+        }
+
+        .go-to-btn {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: none;
+          border: none;
+          color: inherit;
+          margin-top: 1rem;
+          cursor: pointer;
+        }
+
+        .transfers-section {
+          margin-top: 2rem;
+        }
+
+        .section-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 1rem;
+        }
+
+        .filter-actions {
+          display: flex;
+          gap: 1rem;
+        }
+
+        .filter-btn, .add-btn {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.5rem 1rem;
+          background: #2a2a2a;
+          border: none;
+          border-radius: 8px;
+          color: #fff;
+          cursor: pointer;
+        }
+
+        .transfer-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem;
+          border-bottom: 1px solid #2a2a2a;
+        }
+
+        .company-info {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+
+        .company-logo {
+          width: 40px;
+          height: 40px;
+          border-radius: 8px;
+          background: #2a2a2a;
+        }
+
+        .transfer-details {
+          display: flex;
+          gap: 2rem;
+          color: #888;
+        }
+
+        .payment-sidebar {
+          padding: 2rem;
+          border-left: 1px solid #2a2a2a;
+        }
+
+        .payment-header {
+          margin-bottom: 2rem;
+        }
+
+        .card-toggle {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: #2a2a2a;
+          padding: 0.5rem;
+          border-radius: 8px;
+          margin-top: 1rem;
+        }
+
+        .toggle-switch {
+          width: 40px;
+          height: 24px;
+          background: #fff;
+          border-radius: 12px;
+        }
+
+        .card-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem;
+          background: #2a2a2a;
+          border-radius: 8px;
+          margin-bottom: 1rem;
+        }
+
+        .card-info {
+          display: flex;
+          flex-direction: column;
+          gap: 0.25rem;
+        }
+
+        .card-balance {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+
+        .amount {
+          font-weight: bold;
+        }
