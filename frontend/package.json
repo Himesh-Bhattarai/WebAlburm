@@ -4,11 +4,14 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
+    "@tailwindcss/postcss": "^4.0.3",
     "axios": "^1.7.9",
     "bootstrap-icons": "^1.11.3",
     "cra-template": "1.2.0",
+    "framer-motion": "^12.0.11",
     "lucide-react": "^0.474.0",
     "materialize-css": "^1.0.0-rc.2",
+    "motion": "^12.0.11",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.1",
@@ -39,5 +42,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.2.17",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4.0.3"
   }
 }
