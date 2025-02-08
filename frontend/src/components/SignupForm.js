@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
+import React from "react"
 
 export default function SignupForm() {
   const [name, setName] = useState("")
@@ -70,4 +71,3 @@ export default function SignupForm() {
     </form>
   )
 }
-

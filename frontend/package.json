@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
-    "@tailwindcss/postcss": "^4.0.3",
     "axios": "^1.7.9",
     "bootstrap-icons": "^1.11.3",
     "cra-template": "1.2.0",
@@ -21,6 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -44,9 +44,9 @@
     ]
   },
   "devDependencies": {
-    "@tailwindcss/postcss7-compat": "^2.2.17",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.5.1",
-    "tailwindcss": "^4.0.3"
+    "tailwindcss": "^2.2.19",
+    "@tailwindcss/postcss7-compat": "^2.2.19",
+    "postcss": "^7.0.39",
+    "autoprefixer": "^9.8.6"
   }
 }

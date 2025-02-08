@@ -1,11 +1,11 @@
-
+import React from "react"
 import { useState } from "react"
 import Logo from "./Logo"
 import LoginForm from "./LoginForm"
 import SignupForm from "./SignupForm"
 import { motion } from "framer-motion"
 
-export default function Home() {
+export default function Logup() {
     const [isLogin, setIsLogin] = useState(true)
 
     return (
@@ -50,4 +50,3 @@ export default function Home() {
         </div>
     )
 }
-
