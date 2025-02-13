@@ -14,7 +14,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^3.0.1",
     "typed.js": "^2.1.0",
     "web-vitals": "^4.2.4"
   },
@@ -42,11 +42,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "tailwindcss": "^2.2.19",
-    "@tailwindcss/postcss7-compat": "^2.2.19",
-    "postcss": "^7.0.39",
-    "autoprefixer": "^9.8.6"
   }
 }
